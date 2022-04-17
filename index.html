@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Financial Calculator Widget</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+              <h3>Calculate your Rewards</h3>
+              <from>
+                <div class="form-group">
+                  <label>Vendor/Bills</label>
+                  <div>
+                  <input type="text" class="form-control" id="bills" name="bills" placeholder="Enter a number" >
+                  <span class="error">this field accepts number only</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Media/ad spend</label>
+                  <div>
+                  <input class="form-control" id="mediaAds" name="mediaAds" placeholder="Enter a number">
+                  <span class="error">this field accepts number only</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>crop.spend</label>
+                  <div>
+                  <input class="form-control" id="cropSpend" name="cropSpend" placeholder="Enter a number">
+                  <span class="error">this field accepts number only</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Team Project</label>
+                  <div>
+                  <input class="form-control" id="teamProjects" name="teamProjects" placeholder="Enter a number">
+                            <span class="error">this field accepts number only</span>
+                  </div>
+                </div>
+                
+              </form>
+              <div>
+                <h3>Compare your Rewards</h3>
+                <div class="compare-buttons">
+                  <a id="brex" href="./compareResult.html" class="compareBtn">Brex</a>
+                  <a id="stripe" href="./compareResult.html" class="compareBtn">Stripe</a>
+                  <a id='amex' href="./compareResult.html" class="compareBtn">Amex</a>
+                </div>
+              </div>
+              <div class="rewards-result">
+                <div class="box">
+                  <img src="https://pbs.twimg.com/media/FGlHl6HXsAM5lg-.png">
+                  <div class="titles">
+                  <p>unlimited rewards</p>
+                  <p>lifetime rewards</p>
+                  </div>
+                </div>
+                <div class="results">
+                  <p id="unlimited-result"></p>
+                  <p id="lifetime-result"></p>
+                </div>
+              </div>
+            </div>
+          </main>
+          <script src="./script.js"></script>
+    </body>
+</html>

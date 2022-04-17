@@ -1,0 +1,68 @@
+main {
+  padding: 50px 0;
+}
+.container {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.form-group label {
+  text-align: right;
+  width: 150px;
+  margin-right: 20px;
+}
+.form-group .form-control {
+  padding: 3px;
+}
+.error {
+  color: red;
+  display: none;
+}
+.compare-buttons .compareBtn {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px 0px #b7b5b5;
+  padding: 4px 16px;
+  margin: 0 3px;
+  background: #fff;
+  text-decoration: none;
+}
+.compare-buttons .compareBtn.active {
+  border-color: red;
+  padding: 9px 19px;
+}
+.rewards-result {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rewards-result .box {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.rewards-result .box img {
+  max-width: 120px;
+}
+.rewards-result .box .titles {
+  margin-left: 10px;
+}
+.rewards-result .results {
+  margin-top: 27px;
+}
+.rewards-result .results p {
+  width: 140px;
+  background: #1cb3d0;
+  height: 15px;
+  border-radius: 5px;
+}

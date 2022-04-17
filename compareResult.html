@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Financial Calculator Widget</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <main>
+<div class="container">
+    <h4>Compare your rewards</h4>
+    <div class="compare-buttons">
+        <button id="brex" href="./compareResult.html" class="compareBtn">Brex</button>
+        <button id="stripe" href="./compareResult.html" class="compareBtn">Stripe</button>
+        <button id='amex' href="./compareResult.html" class="compareBtn">Amex</button>
+    </div>
+    <div class="rewards-result">
+        <div class="box">
+          <img src="https://pbs.twimg.com/media/FGlHl6HXsAM5lg-.png">
+          <div class="titles">
+          <p id="cardType">Business Card</p>
+          <p>unlimited rewards</p>
+          <p>lifetime rewards</p>
+          </div>
+        </div>
+        <div class="results">
+          <p id="storedResult"></p>
+          <p id="unlimited-result"></p>
+          <p id="lifetime-result"></p>
+        </div>
+      </div>
+</div>
+</main>
+<script>
+  console.log(localStorage.getItem('result'))
+  console.log(localStorage.getItem('cardType'))
+
+    let result = localStorage.getItem('result')
+    let type = localStorage.getItem('cardType')
+    document.getElementById('storedResult').innerHTML = result
+    document.getElementById('unlimited-result').innerHTML = localStorage.getItem("unlimited-result")
+    document.getElementById('lifetime-result').innerHTML = localStorage.getItem("lifetime-result")
+const buttons = document.querySelectorAll('.compareBtn')
+buttons.forEach(btn=>{
+  console.log(btn.id,  type, result)
+  if(btn.id == type){
+
+    btn.classList.add('active')
+  }else{
+    btn.classList.remove('active')
+  }
+})
+</script>
+</body>
+</html>
